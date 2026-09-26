@@ -1,0 +1,91 @@
+import { ThemeProvider } from "@/components/providers/theme-providers";
+import TrpcProvider from "@/components/providers/trpc-provider";
+import { siteConfig } from "@/configs/site";
+import "./globals.css"
+import type { Metadata, Viewport } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.name,
+    template: `%s - CapcoCS`
+  },
+  description: siteConfig.description,
+  // added new keywords for SEO
+  keywords: [
+  
+    "prisma",
+    "prisma io",
+    "prisma postgres",
+    "nextjs 13",
+    "tailwind nextjs",
+    "prisma nextjs",
+    "trpc nextjs",
+    "trpc",
+    "trpc api",
+    "tailwindcss",
+    "t3 app",
+    "web development tech stack",
+    "modern tech stacks",
+    "tech stacks",
+    "nextjs with trpc",
+    "t3 stack",
+    "typescript",
+    
+    "trpc with prisma",
+    "web development",
+    "codox"
+  ],
+
+  creator: siteConfig.author.name,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [`${siteConfig.url}/og-image.png`],
+    siteName: siteConfig.name
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [`${siteConfig.url}/og-image.png`],
+    creator: "@capcocs"
+  },
+  icons: {
+    icon: "/favicon.ico"
+  }
+};
+
+export const viewport: Viewport = {
+  colorScheme: "dark light",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" }
+  ]
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <TrpcProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </TrpcProvider>
+      </body>
+    </html>
+  );
+}

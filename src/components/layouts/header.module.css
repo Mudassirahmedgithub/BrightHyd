@@ -1,0 +1,169 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+
+    display: flex;
+    align-items: center;
+
+    background: transparent;
+
+    z-index: 1000;
+
+    transition: all .3s ease;
+}
+
+
+
+.inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: .3s;
+}
+
+.scrolled .brand {
+    color: #111;
+}
+
+.logoMark {
+    width: 34px;
+    height: 34px;
+}
+
+.brandName {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.brandAccent {
+    color: #45b649;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.scrolled .navLink {
+    color: #222;
+}
+
+.navLink:hover {
+    color: #45b649;
+}
+
+.navCta {
+    text-decoration: none;
+
+    padding: 12px 28px;
+
+    border-radius: 999px;
+
+    background: white;
+
+    color: #111;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.scrolled .navCta {
+    background: #45b649;
+    color: white;
+}
+
+.navCta:hover {
+    transform: translateY(-2px);
+}
+
+.menuToggle {
+    display: none;
+}
+
+@media(max-width:768px) {
+
+    .menuToggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+
+        width: 40px;
+        height: 40px;
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menuToggle span {
+        width: 24px;
+        height: 2px;
+        background: white;
+    }
+
+    .scrolled .menuToggle span {
+        background: #111;
+    }
+
+    .nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        background: white;
+
+        padding: 30px;
+
+        opacity: 0;
+        visibility: hidden;
+
+        gap: 18px;
+
+        transition: .3s;
+    }
+
+    .nav[data-open="true"] {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navLink {
+        color: #111;
+    }
+
+    .navCta {
+        background: #45b649;
+        color: white;
+    }
+}

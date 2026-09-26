@@ -1,0 +1,289 @@
+{
+  "mainNav": [
+    { "label": "About", "href": "/about" },
+    { "label": "AI", "type": "mega", "key": "ai"},    
+    { "label": "Products", "type": "mega" },
+    { "label": "Services", "type": "mega", "key": "services" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+
+  "products": [
+    {
+      "category": "Oracle Fusion Cloud",
+      "icon": "☁️",
+      "description": "Integrated Oracle Fusion Cloud applications for enterprise transformation and automation",
+      "base": "oracle-fusion-cloud",
+      "items": [
+        {
+          "label": "Financial Management",
+          "icon": "💰",
+          "description": "Enterprise financial planning, accounting, budgeting, and reporting"
+        },
+        {
+          "label": "Supply Chain & Operations",
+          "icon": "🏭",
+          "description": "Integrated supply chain, procurement, inventory, and production operations"
+        },
+        {
+          "label": "Human Capital Management",
+          "icon": "👥",
+          "description": "Modern HR, workforce management, recruitment, and employee engagement"
+        },
+        {
+          "label": "Project & Performance Management",
+          "icon": "📊",
+          "description": "Project execution, enterprise performance management, and resource planning"
+        },
+        {
+          "label": "Customer Experience",
+          "icon": "🤝",
+          "description": "Unified customer engagement, sales, and service management solutions"
+        },
+        {
+          "label": "AI Analytics & Reporting",
+          "icon": "🧠",
+          "description": "AI-powered dashboards, KPI monitoring, analytics, and business insights"
+        },
+        {
+          "label": "ERP Implementation & Integration",
+          "icon": "⚙️",
+          "description": "Oracle Fusion ERP deployment, customization, migration, and support services"
+        }
+      ]
+    },
+
+    {
+      "category": "Oracle NetSuite ERP",
+      "icon": "📦",
+      "description": "AI-powered cloud ERP platform for business management and operational visibility",
+      "base": "oracle-netsuite-erp",
+      "items": [
+        {
+          "label": "Financial & Accounting Management",
+          "icon": "💰",
+          "description": "Automated accounting, billing, financial reporting, and compliance management"
+        },
+        {
+          "label": "Inventory, Warehouse & Supply Chain",
+          "icon": "📦",
+          "description": "Real-time inventory control, warehouse operations, procurement, and logistics"
+        },
+        {
+          "label": "Order & Production Management",
+          "icon": "🏭",
+          "description": "Sales order processing, manufacturing workflows, and production planning"
+        },
+        {
+          "label": "Project Management",
+          "icon": "📁",
+          "description": "Project tracking, budgeting, resource allocation, and profitability management"
+        },
+        {
+          "label": "Analytics & AI Insights",
+          "icon": "📊",
+          "description": "Real-time dashboards, KPI reporting, AI-powered analytics, and data insights"
+        },
+        {
+          "label": "Multi-Entity Business Management",
+          "icon": "🌐",
+          "description": "Manage subsidiaries, business units, and global operations from one platform"
+        },
+        {
+          "label": "ERP Implementation & Support",
+          "icon": "⚙️",
+          "description": "NetSuite deployment, customization, integration, training, and support services"
+        }
+      ]
+   },
+    {
+      "category": "Beyond-RF",
+      "icon": "📦",
+      "description": "SAP-certified mobile warehouse management solution that modernizes RF scanning with a fast, intuitive Android experience for SAP EWM and SAP WM.",
+      "base": "",
+      "items": [
+        {
+          "label": "Beyond-RF",
+          "icon": "📱",
+          "description": "Mobile data capture platform for SAP warehouses, enabling faster barcode scanning, offline operations, seamless SAP integration, and improved warehouse productivity."
+        }
+      ]
+    }
+
+  ],
+  "ai": [
+  {
+    "category": "AI Agent Development",
+    "icon": "🤖",
+    "description": "Autonomous AI agents that reason, plan, and act intelligently.",
+    "base": "",
+    "items": [
+      {
+        "label": "AI Agent Development",
+        "icon": "🤖",
+        "description": "Autonomous AI agents that reason, plan, and act intelligently."
+      }
+    ]
+  },
+  {
+    "category": "AI Chatbot Development",
+    "icon": "💬",
+    "description": "Conversational AI solutions for customer engagement and support.",
+    "base": "",
+    "items": [
+      {
+        "label": "AI Chatbot Development",
+        "icon": "💬",
+        "description": "Conversational AI solutions for customer engagement and support."
+      }
+    ]
+  },
+  {
+    "category": "AI Consulting",
+    "icon": "🧭",
+    "description": "Strategic AI guidance to accelerate business transformation.",
+    "base": "",
+    "items": [
+      {
+        "label": "AI Consulting",
+        "icon": "🧭",
+        "description": "Strategic AI guidance to accelerate business transformation."
+      }
+    ]
+  }
+ 
+],
+  "services": [
+{
+  "category": "Warehouse Management",
+  "icon": "🏭",
+  "description": "Efficient warehouse operations and inventory control solutions.",
+  "base": "warehouse-management",
+  "items": [
+    {
+      "label": "Inventory Management",
+      "icon": "📦",
+      "description": "Real-time tracking and control of warehouse stock levels."
+    },
+    {
+      "label": "Order Fulfillment",
+      "icon": "🚚",
+      "description": "Streamlined picking, packing, and shipping processes."
+    },
+    {
+      "label": "Warehouse Automation",
+      "icon": "🤖",
+      "description": "Automated systems to improve speed and accuracy."
+    },
+    {
+      "label": "Stock Auditing & Reporting",
+      "icon": "📊",
+      "description": "Accurate reporting and inventory reconciliation tools."
+    }
+  ]
+},
+{
+    "category": "Asset Management",
+    "icon": "📦",
+    "description": "Comprehensive solutions for tracking and managing company assets.",
+    "base": "asset-management",
+    "items": [
+      {
+        "label": "Asset Life Cycle Management",
+        "icon": "🔄",
+        "description": "Manages assets from procurement and deployment to maintenance, depreciation, and disposal"
+      },
+      {
+        "label": "Asset Tracking",
+        "icon": "📍",
+        "description": "Monitors asset location, usage, and status in real time to improve visibility and control"
+      },
+      {
+        "label": "Asset Financial & Compliance Management",
+        "icon": "📊",
+        "description": "Tracks asset costs, depreciation, audits, and regulatory compliance to ensure financial accuracy"
+      },
+      {
+        "label": "Asset Work & Registry",
+        "icon": "🗂️",
+        "description": "Centralized asset registry with automated work management"
+      },
+      {
+        "label": "Asset Inspection",
+        "icon": "🔍",
+        "description": "Digital asset inspection workflows with real-time reporting"
+      },
+      {
+        "label": "RFID Solutions",
+        "icon": "📡",
+        "description": "Automated tracking using RFID technology."
+      }
+    ]
+  }, 
+  {
+    "category": "Business Management & Consultancy",
+    "icon": "📊",
+    "description": "Strategic advisory services to optimize operations and growth.",
+    "base": "",
+    "items": [
+      {
+        "label": "Business Management & Consultancy",
+        "icon": "📊",
+        "description": "Strategic advisory services to optimize operations and growth."
+      }
+    ]
+  },
+  {
+    "category": "Digital Marketing",
+    "icon": "📣",
+    "description": "Data-driven marketing strategies to grow your brand.",
+    "base": "",
+    "items": [
+      {
+        "label": "Digital Marketing",
+        "icon": "📣",
+        "description": "Data-driven marketing strategies to grow your brand."
+      }
+    ]
+  },
+  {
+    "category": "Software Development",
+    "icon": "💻",
+    "description": "Custom software solutions tailored to your business needs.",
+    "base": "",
+    "items": [
+      {
+        "label": "Software Development",
+        "icon": "💻",
+        "description": "Custom software solutions tailored to your business needs."
+      }
+    ]
+  },  
+  {
+    "category": "Data Governance & AI",
+    "icon": "📊",
+    "description": "Trusted data management and intelligent AI-powered solutions.",
+    "base": "",
+    "items": [
+      {
+        "label": "Data Governance & AI",
+        "icon": "📊",
+        "description": "Trusted data management and intelligent AI-powered solutions."
+
+      }
+    ]
+  },
+  {
+    "category": "IT Consulting Support",
+    "icon": "🧠",
+    "description": "Expert technology consulting and reliable IT support services.",
+    "base": "",
+    "items": [
+      {
+        "label": "IT Consulting Support",
+        "icon": "🧠",
+        "description": "Expert technology consulting and reliable IT support services."
+      }
+    ]
+  }
+]
+}
