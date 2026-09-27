@@ -1,15 +1,38 @@
+
 "use client";
 
 import { useState } from "react";
+import type { CSSProperties } from "react";
 import styles from "./CoursesSection.module.css";
 
-const categories = [
+// 1. Define category types
+type CategoryId = "languages" | "exams" | "support";
+
+type ActiveCategory = "all" | CategoryId;
+
+// 2. Define course and category interfaces
+interface Category {
+  id: CategoryId;
+  label: string;
+}
+
+interface Course {
+  id: string;
+  category: CategoryId;
+  title: string;
+  description: string;
+  duration: string;
+}
+
+// 3. Type the categories array
+const categories: Category[] = [
   { id: "languages", label: "Languages" },
   { id: "exams", label: "Exam preparation" },
   { id: "support", label: "Learning support" },
 ];
 
-const courses = [
+// 4. Type the courses array
+const courses: Course[] = [
   {
     id: "spoken-english",
     category: "languages",
@@ -76,13 +99,23 @@ const courses = [
   },
 ];
 
+// 5. Define the custom CSS variable type
+type CourseRowStyle = CSSProperties & {
+  "--row-index": number;
+};
+
 export default function CoursesSection() {
-  const [active, setActive] = useState("all");
+  const [active, setActive] = useState<ActiveCategory>("all");
 
-  const visible =
-    active === "all" ? courses : courses.filter((c) => c.category === active);
+  // Filter courses by selected category
+  const visible: Course[] =
+    active === "all"
+      ? courses
+      : courses.filter((course) => course.category === active);
 
-  const categoryLabel = (id) => categories.find((c) => c.id === id)?.label ?? id;
+  // Get category label
+  const categoryLabel = (id: CategoryId): string =>
+    categories.find((category) => category.id === id)?.label ?? id;
 
   return (
     <section id="courses" className={styles.coursesSection}>
@@ -95,6 +128,7 @@ export default function CoursesSection() {
               <span> path.</span>
             </h2>
           </div>
+
           <p>
             Explore language learning, international exam preparation, and study
             support. Programmes are subject to batch availability.
@@ -117,6 +151,7 @@ export default function CoursesSection() {
           >
             All programmes
           </button>
+
           {categories.map((cat) => (
             <button
               key={cat.id}
@@ -138,19 +173,32 @@ export default function CoursesSection() {
             <article
               className={styles.courseRow}
               key={course.id}
-              style={{ "--row-index": i }}
+              style={
+                {
+                  "--row-index": i,
+                } as CourseRowStyle
+              }
             >
               <div className={styles.courseCategory}>
-                <span className={styles.categoryDot} aria-hidden="true" />
+                <span
+                  className={styles.categoryDot}
+                  aria-hidden="true"
+                />
                 {categoryLabel(course.category)}
               </div>
+
               <div className={styles.courseBody}>
                 <h3>{course.title}</h3>
                 <p>{course.description}</p>
               </div>
-              <div className={styles.courseDuration}>{course.duration}</div>
+
+              <div className={styles.courseDuration}>
+                {course.duration}
+              </div>
+
               <a className={styles.courseLink} href="#contact">
-                Learn more<span aria-hidden="true">↗</span>
+                Learn more
+                <span aria-hidden="true">↗</span>
               </a>
             </article>
           ))}
