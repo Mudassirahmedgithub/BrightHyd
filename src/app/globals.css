@@ -55,38 +55,37 @@
     --font-weight-bold: 700;
     --font-weight-black: 900;
 
-    /* Color — raw palette (do not consume directly in components) */
-    --color-text-primary: #ffffff;
-    --color-surface-muted: #252525;
-    --color-text-tertiary: #318216;
-    /* AA: 4.3:1 on base — large text/accent use only, not body copy */
-    --color-text-inverse: #8e8e8e;
-    /* AA: 6.4:1 on base — safe for secondary body copy */
-    --color-surface-base: #000000;
-    --color-surface-raised: #d8ffcb;
-    --color-surface-strong: #44b31f;
+/* Color — raw palette */
+--color-text-primary: #17211B;
+--color-surface-muted: #F6F8F6;
+--color-text-tertiary: #15803D;
+--color-text-inverse: #64748B;
 
-    /* Color — semantic aliases (use these in component CSS) */
-    --color-bg-page: var(--color-surface-base);
-    --color-bg-surface: var(--color-surface-muted);
-    --color-bg-surface-raised: var(--color-surface-raised);
-    --color-bg-accent: var(--color-surface-strong);
+--color-surface-base: #FFFFFF;
+ --color-surface-raised: #d8ffcb;
+--color-surface-strong: #16A34A;
 
-    --color-fg-default: var(--color-text-primary);
-    --color-fg-muted: var(--color-text-inverse);
-    --color-fg-accent: var(--color-text-tertiary);
-    --color-fg-on-accent: #000000;
-    /* dark text for use on raised/accent surfaces */
+/* Semantic aliases */
+--color-bg-page: var(--color-surface-base);
+--color-bg-surface: var(--color-surface-muted);
+--color-bg-surface-raised: var(--color-surface-raised);
+--color-bg-accent: var(--color-surface-strong);
 
-    --color-border-default: #3a3a3a;
-    --color-border-strong: var(--color-surface-strong);
+--color-fg-default: var(--color-text-primary);
+--color-fg-muted: var(--color-text-inverse);
+--color-fg-accent: var(--color-text-tertiary);
+--color-fg-on-accent: #FFFFFF;
 
-    --color-danger: #ff5c5c;
-    --color-danger-surface: #3a1414;
-    --color-success: var(--color-surface-strong);
-    --color-success-surface: var(--color-surface-raised);
+--color-border-default: #DDE5DF;
+--color-border-strong: var(--color-surface-strong);
 
-    --color-focus-ring: #ffffff;
+--color-danger: #DC2626;
+--color-danger-surface: #FEF2F2;
+
+--color-success: #16A34A;
+--color-success-surface: #ECFDF3;
+
+--color-focus-ring: #16A34A;
 
     /* Spacing */
     --space-1: 2px;

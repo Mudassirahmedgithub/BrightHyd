@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Akaash Industries",
+  name: "Brigth Path",
   description:
-    "Akaash Industries new website!.",
+    "Brigth Path new website!.",
   url: "https:akaash.vercel.app/",
   ogImage: "https://codox.vercel.app/opengraph-image.png",
   author: {

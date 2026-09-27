@@ -10,7 +10,7 @@ export default function Footer() {
             <span><strong>BrightPath</strong><small>Jubilee Hills · Hyderabad</small></span>
           </a>
           <div className={styles.footerAddress}>
-            5th Floor, Road Number 44, CBI Colony,<br />
+            4th Floor, Road Number 44, CBI Colony,<br />
             Jubilee Hills, Hyderabad,<br />
             Telangana 500033, India
           </div>

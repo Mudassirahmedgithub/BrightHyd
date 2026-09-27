@@ -11,15 +11,15 @@ export default function ContactSection() {
         </div>
         <div className={styles.contactGrid}>
           <div className={styles.contactAction}>
-            <a href="tel:+917013396751" className="btn btn-primary">Book a Free Trial Class</a>
-            <a href="tel:+917013396751">Call +91 70133 96751</a>
-            <a href="https://wa.me/917013396751" target="_blank" rel="noreferrer">WhatsApp admissions</a>
+            <a href="tel:+91 7675043207" className="btn btn-primary">Book a Free Trial Class</a>
+            <a href="tel:+91 7675043207">Call +91 7675043207</a>
+            <a href="https://wa.me/917675043207" target="_blank" rel="noreferrer">WhatsApp admissions</a>
           </div>
           <div className={styles.contactDetails}>
-            <div><span>Visit</span><p>5th Floor, Road Number 44, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033, India</p></div>
+            <div><span>Visit</span><p>4th Floor, Road Number 44, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033, India</p></div>
             <div><span>Hours</span><p>Mon–Sat 09:00–18:00<br />(Sunday closed)</p></div>
-            <div><span>Write</span><a href="mailto:merjanimpex.hyd@gmail.com">merjanimpex.hyd@gmail.com</a></div>
-            <div><span>WhatsApp</span><a href="tel:+917013396751">+91 70133 96751</a></div>
+            <div><span>Email</span><a href="mailto:brightpatheduhyd@gmail.com">brightpatheduhyd@gmail.com</a></div>
+            <div><span>WhatsApp</span><a href="tel:+91 7675043207">+91 7675043207</a></div>
             <div><span>Instagram</span><a href="#">@brightpath</a></div>
           </div>
         </div>
