@@ -97,6 +97,14 @@ const courses: Course[] = [
       "Schools are welcome to discuss a workshop proposal tailored to their learning goals.",
     duration: "Custom schedule",
   },
+    {
+    id: "Coding",
+    category: "support",
+    title: "Coding Classes",
+    description:
+      "Learn to code, build real projects, and develop skills for the future.",
+    duration: "Custom schedule",
+  },
 ];
 
 // 5. Define the custom CSS variable type
