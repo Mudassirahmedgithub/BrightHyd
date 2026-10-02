@@ -176,7 +176,7 @@
   color: #000;
 }
 
-/* Tablet */
+
 @media (max-width: 1000px) {
   .heroGrid {
     grid-template-columns: 1fr;
@@ -188,7 +188,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .heroGrid {
     min-height: auto;
@@ -212,7 +212,7 @@
   }
 }
 
-/* Small mobile */
+
 @media (max-width: 480px) {
   .heroActions {
     flex-direction: column;

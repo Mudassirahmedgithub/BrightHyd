@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@/components/providers/theme-providers";
 import TrpcProvider from "@/components/providers/trpc-provider";
 import { siteConfig } from "@/configs/site";
-import "./globals.css"
+import "./globals.css";
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
