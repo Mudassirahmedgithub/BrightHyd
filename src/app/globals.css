@@ -1,37 +1,7 @@
-/* ==========================================================================
-   Akaash Industries — globals.css
-   Token-driven base stylesheet for the Next.js storefront.
-   Import once in app/layout.tsx: import "./globals.css";
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. Font
-   Satoshi is not a system/Google font — self-host it or load via Fontshare.
-   Uncomment ONE of the two options below.
-   -------------------------------------------------------------------------- */
-
-/* Option A — Fontshare CDN (quick start) */
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap");
 
-/* Option B — self-hosted (recommended for production/perf).
-   Drop woff2 files in /public/fonts and use next/font/local instead of this
-   @font-face block for best results. Left here as a fallback reference.
-@font-face {
-  font-family: "Satoshi";
-  src: url("/fonts/Satoshi-Variable.woff2") format("woff2");
-  font-weight: 300 900;
-  font-style: normal;
-  font-display: swap;
-}
-*/
-
-/* --------------------------------------------------------------------------
-   2. Design tokens (semantic CSS custom properties)
-   Component guidance must reference these variables — never raw hex/px.
-   -------------------------------------------------------------------------- */
-
 :root {
-    /* Font */
+ 
     --font-family-primary: "Satoshi", system-ui, "-apple-system", "Segoe UI",
         "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -40,7 +10,7 @@
     --font-weight-base: 400;
     --line-height-base: 24px;
 
-    /* Type scale */
+  
     --font-size-xs: 14px;
     --font-size-sm: 16px;
     --font-size-md: 18px;
@@ -55,7 +25,7 @@
     --font-weight-bold: 700;
     --font-weight-black: 900;
 
-/* Color — raw palette */
+
 --color-text-primary: #17211B;
 --color-surface-muted: #F6F8F6;
 --color-text-tertiary: #15803D;
@@ -65,7 +35,7 @@
  --color-surface-raised: #d8ffcb;
 --color-surface-strong: #16A34A;
 
-/* Semantic aliases */
+
 --color-bg-page: var(--color-surface-base);
 --color-bg-surface: var(--color-surface-muted);
 --color-bg-surface-raised: var(--color-surface-raised);
@@ -87,7 +57,7 @@
 
 --color-focus-ring: #16A34A;
 
-    /* Spacing */
+
     --space-1: 2px;
     --space-2: 4px;
     --space-3: 8px;
@@ -97,7 +67,7 @@
     --space-7: 24px;
     --space-8: 32px;
 
-    /* Radius */
+   
     --radius-xs: 8px;
     --radius-sm: 12px;
     --radius-md: 16px;
@@ -106,24 +76,21 @@
     --radius-2xl: 48px;
     --radius-step7: 50px;
 
-    /* Shadow */
+
     --shadow-1: rgba(255, 255, 255, 0.35) 0px 0px 32px 0px;
 
-    /* Motion */
+   
     --motion-duration-instant: 100ms;
     --motion-duration-fast: 200ms;
     --motion-duration-normal: 300ms;
     --motion-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Layout */
+
     --content-max-width: 1280px;
     --container-padding-inline: var(--space-7);
     --header-height: 84px;
 }
 
-/* --------------------------------------------------------------------------
-   3. Reset / base
-   -------------------------------------------------------------------------- */
 
 *,
 *::before,
@@ -182,7 +149,7 @@ ol {
     list-style: none;
 }
 
-/* Respect reduced-motion preference */
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -198,9 +165,7 @@ ol {
     }
 }
 
-/* --------------------------------------------------------------------------
-   4. Focus visibility (non-negotiable per accessibility rules)
-   -------------------------------------------------------------------------- */
+------------------------------------------------------------- */
 
 :focus {
     outline: none;
@@ -212,9 +177,6 @@ ol {
     border-radius: var(--radius-xs);
 }
 
-/* --------------------------------------------------------------------------
-   5. Typography — headings & body
-   -------------------------------------------------------------------------- */
 
 h1,
 .text-h1 {
@@ -281,7 +243,7 @@ p,
     font-size: var(--font-size-sm);
     line-height: var(--line-height-base);
     color: var(--color-fg-muted);
-    /* AA-safe secondary copy */
+   
 }
 
 .text-caption,
@@ -293,7 +255,7 @@ small {
 
 .text-accent {
     color: var(--color-fg-accent);
-    /* use for large text (>=18.5px) or non-text UI accents only */
+    
 }
 
 a,
@@ -313,9 +275,6 @@ a:focus-visible {
     outline-offset: 2px;
 }
 
-/* --------------------------------------------------------------------------
-   6. Layout helpers
-   -------------------------------------------------------------------------- */
 
 .container {
     width: 100%;
@@ -341,9 +300,6 @@ a:focus-visible {
     padding: var(--space-6);
 }
 
-/* --------------------------------------------------------------------------
-   7. Button — all required interaction states
-   -------------------------------------------------------------------------- */
 
 .btn {
     display: inline-flex;
@@ -351,7 +307,7 @@ a:focus-visible {
     justify-content: center;
     gap: var(--space-3);
     min-height: 44px;
-    /* touch target */
+   
     padding: var(--space-4) var(--space-6);
     border-radius: var(--radius-sm);
     font-size: var(--font-size-sm);
@@ -364,7 +320,7 @@ a:focus-visible {
     touch-action: manipulation;
 }
 
-/* Primary */
+
 .btn-primary {
     background-color: var(--color-bg-accent);
     color: var(--color-fg-on-accent);
@@ -409,7 +365,7 @@ a:focus-visible {
     animation: btn-spin var(--motion-duration-normal) linear infinite;
 }
 
-/* Secondary */
+
 .btn-secondary {
     background-color: transparent;
     border-color: var(--color-border-default);
@@ -438,7 +394,6 @@ a:focus-visible {
     pointer-events: none;
 }
 
-/* Error state (e.g. failed submit action) */
 .btn-danger {
     background-color: var(--color-danger);
     color: #ffffff;
@@ -459,9 +414,6 @@ a:focus-visible {
     }
 }
 
-/* --------------------------------------------------------------------------
-   8. Input — all required interaction states
-   -------------------------------------------------------------------------- */
 
 .field {
     display: flex;
@@ -516,9 +468,6 @@ a:focus-visible {
     color: var(--color-danger);
 }
 
-/* --------------------------------------------------------------------------
-   9. Card
-   -------------------------------------------------------------------------- */
 
 .card {
     background-color: var(--color-bg-surface);
@@ -539,7 +488,7 @@ a:focus-visible {
     outline-offset: 2px;
 }
 
-/* Empty state */
+
 .card-empty {
     display: flex;
     flex-direction: column;
@@ -552,8 +501,6 @@ a:focus-visible {
     border: 1px dashed var(--color-border-default);
     border-radius: var(--radius-md);
 }
-
-/* Overflow / long content handling */
 .text-truncate {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -567,9 +514,6 @@ a:focus-visible {
     overflow: hidden;
 }
 
-/* --------------------------------------------------------------------------
-   10. Navigation (density: 1 primary nav on-page)
-   -------------------------------------------------------------------------- */
 
 .nav {
     display: flex;
@@ -602,9 +546,6 @@ a:focus-visible {
     font-weight: var(--font-weight-medium);
 }
 
-/* --------------------------------------------------------------------------
-   11. Responsive breakpoints (mobile-first)
-   -------------------------------------------------------------------------- */
 
 @media (max-width: 768px) {
     :root {

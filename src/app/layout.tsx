@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
-    template: `%s - CapcoCS`
+    template: `%s - Bright Path`
   },
   description: siteConfig.description,
   // added new keywords for SEO
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og-image.png`],
-    creator: "@capcocs"
+    creator: "@brightpath"
   },
   icons: {
     icon: "/favicon.ico"
